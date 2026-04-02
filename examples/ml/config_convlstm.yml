@@ -1,0 +1,86 @@
+# =============================================================================
+# ConvLSTM Moving MNIST Training Configuration for HydroArray
+# =============================================================================
+
+# ============== Experiment Configuration ==============
+experiment:
+  # Experiment name (used as folder name for results)
+  experiment_name: convlstm_mnist
+
+  # Output directory (parent folder for experiment results)
+  output_dir: ./runs
+
+  # Random seed for reproducibility
+  seed: 42
+
+  # Device: 'auto', 'cuda', 'cpu', 'cuda:0'
+  device: auto
+
+  # Print training log every N epochs
+  log_interval: 5
+
+# ============== Data Configuration ==============
+data:
+  # Dataset name: 'moving_mnist'
+  dataset: moving_mnist
+
+  # Path to Moving MNIST data
+  data_dir: examples/data/mnist
+
+  # Input sequence length (days)
+  seq_len: 10
+
+  # Prediction length (days)
+  pred_len: 10
+
+  # Data split ratio
+  val_ratio: 0.1
+
+  # DataLoader settings
+  batch_size: 16
+  num_workers: 0
+  pin_memory: true
+
+# ============== Model Configuration ==============
+model:
+  # Model type: 'convlstm', 'lstm', 'bilstm'
+  type: convlstm
+
+  # ConvLSTM hidden dimensions (paper default: [128, 64, 64])
+  hidden_dim: 64
+
+  # Number of ConvLSTM layers
+  num_layers: 3
+
+  # Convolutional kernel size
+  kernel_size: 5
+
+# ============== Training Configuration ==============
+training:
+  # Number of training epochs
+  num_epochs: 20
+
+  # Learning rate
+  learning_rate: 0.001
+
+  # Weight decay (L2 regularization)
+  weight_decay: 0.00001
+
+  # Gradient clipping norm (0 = no clipping)
+  grad_clip: 1.0
+
+  # Early stopping patience (epochs without improvement before stopping)
+  early_stopping_patience: 10
+
+# ============== Visualization Configuration ==============
+visualization:
+  # Enable/disable plotting
+  enabled: true
+
+  # Plot style: 'hess', 'nature', 'jgr', 'dark_pro', 'warm_climate', 'eco_green', 'nature_pub'
+  style: hess
+
+  # Plots to generate: 'loss', 'scatter', 'timeseries', 'metrics'
+  plots:
+    - loss
+    - metrics

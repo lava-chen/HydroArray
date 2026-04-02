@@ -1,0 +1,111 @@
+# =============================================================================
+# CAMELS-US LSTM Training Configuration for HydroArray
+# =============================================================================
+
+# ============== Experiment Configuration ==============
+experiment:
+  # Experiment name (used as folder name for results)
+  experiment_name: camels_us_lstm
+
+  # Output directory (parent folder for experiment results)
+  output_dir: ./runs
+
+  # Random seed for reproducibility (null = no seed)
+  seed: 42
+
+  # Device: 'auto', 'cuda', 'cpu', 'cuda:0'
+  device: auto
+
+  # Print training log every N epochs
+  log_interval: 10
+
+# ============== Data Configuration ==============
+data:
+  # Dataset name: 'camels_us'
+  dataset: camels_us
+
+  # Path to CAMELS-US data directory
+  data_dir: M:/CAMEL-US/data/美国数据集 (CAMELS)/美国数据集 (CAMELS)
+
+  # Basin IDs (8-digit format, quotes required to preserve leading zeros)
+  basins:
+    - "01013500"
+    - "01015000"
+    - "01022500"
+
+  # Input sequence length (days)
+  seq_len: 365
+
+  # Prediction length (days)
+  pred_len: 1
+
+  # Forcing variables
+  forcings:
+    - dayl(s)
+    - prcp(mm/day)
+    - srad(W/m2)
+    - swe(mm)
+    - tmax(C)
+    - tmin(C)
+    - vp(Pa)
+
+  # Forcing source: 'daymet', 'maurer', 'nldas'
+  forcing_source: daymet
+
+  # Data split ratio
+  val_ratio: 0.1
+
+  # DataLoader settings
+  batch_size: 32
+  num_workers: 0
+  pin_memory: true
+
+# ============== Model Configuration ==============
+model:
+  # Model type: 'lstm', 'bilstm'
+  type: lstm
+
+  # LSTM hidden dimension
+  hidden_dim: 64
+
+  # Number of LSTM layers
+  num_layers: 2
+
+  # Output dimension (1 for discharge prediction)
+  output_dim: 1
+
+  # Dropout rate
+  dropout: 0.1
+
+# ============== Training Configuration ==============
+training:
+  # Number of training epochs
+  num_epochs: 50
+
+  # Learning rate
+  learning_rate: 0.001
+
+  # Weight decay (L2 regularization)
+  weight_decay: 0.00001
+
+  # Gradient clipping norm (0 = no clipping)
+  grad_clip: 1.0
+
+  # Early stopping patience (epochs without improvement before stopping)
+  early_stopping_patience: 10
+
+# ============== Visualization Configuration ==============
+visualization:
+  # Enable/disable plotting
+  enabled: true
+
+  # Plot style: 'hess', 'nature', 'jgr', 'dark_pro', 'warm_climate', 'eco_green', 'nature_pub'
+  style: hess
+
+  # Plots to generate: 'loss', 'scatter', 'timeseries', 'metrics'
+  # Set to empty list [] to disable all plots
+  plots:
+    - loss          # Training/validation loss curve
+    - scatter       # Predictions vs observations scatter plot
+    - timeseries    # Time series comparison
+    - metrics       # Metrics summary bar chart
