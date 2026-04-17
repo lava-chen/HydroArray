@@ -1,0 +1,35 @@
+# LSTM推流预测实验配置
+# HydroArray作业
+
+# 数据配置
+data:
+  path: "./data/2023年6月-8月数据汇总_lstm.xlsx"
+  choose_v: "12345"  # 选择浮标测线
+
+# 模型配置
+model:
+  input_size: 8  # 4 + len("12345") = 8
+  hidden_size: 256
+  output_size: 1
+  forecast_horizon: 48  # 预测48小时（24小时）
+  seq_len: 48  # 输入序列长度
+
+# 训练配置
+training:
+  epochs: 50
+  batch_size: 16
+  learning_rate: 0.0001
+  val_ratio: 0.1
+
+# 时间范围
+time:
+  train_start: "20230601"
+  train_end: "20230812"
+  val_start: "20230813"
+  val_end: "20230822"
+  test_start: "20230823"
+  test_end: "20230831"
+
+# 输出配置
+output:
+  dir: "./outputs"

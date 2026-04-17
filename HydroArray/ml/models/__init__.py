@@ -70,8 +70,9 @@ from .generative import (
     DiffusionModel,
 )
 
-# Import sequence models (automatically registers lstm, bilstm)
+# Import sequence models (automatically registers lstm, bilstm, seq2seq)
 from . import sequence
+from .sequence import Seq2SeqLSTM
 
 # Import hydrological models (placeholders - implementation pending)
 # from .flood_forecast import FloodForecastModel
@@ -109,7 +110,8 @@ __all__ = [
     # Sequence models
     "SimpleLSTM",
     "BidirectionalLSTM",
-    
+    "Seq2SeqLSTM",
+
     # Generative models
     "DiffusionModel",
     

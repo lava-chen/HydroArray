@@ -12,7 +12,7 @@ project_root = Path(__file__).parent.parent.parent.parent
 sys.path.insert(0, str(project_root))
 
 from HydroArray.io import read_hydro_table,extract_time_series
-from HydroArray.processing import saturation_excess_runoff, two_source_runoff_separation, three_source_runoff_separation
+from HydroArray.domain.process.runoff import saturation_excess_runoff, two_source_runoff_separation, three_source_runoff_separation
 
 
 if __name__ == "__main__":

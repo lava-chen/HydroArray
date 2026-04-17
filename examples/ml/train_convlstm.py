@@ -20,7 +20,7 @@ from HydroArray.ml.models.spatial.conv_lstm import train_convlstm
 
 def main():
     parser = argparse.ArgumentParser(description='Train ConvLSTM on Moving MNIST')
-    parser.add_argument('--config', type=str, default='config_convlstm.yml',
+    parser.add_argument('--config', type=str, default='examples/ml/config_convlstm.yml',
                         help='Path to configuration file')
     parser.add_argument('--epochs', type=int, default=None,
                         help='Override number of epochs from config')

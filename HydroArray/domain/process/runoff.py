@@ -110,6 +110,9 @@ def saturation_excess_runoff(
         PE = P - E_total
 
         if PE < 0:
+            # 蒸发后根据新的土壤含水量重新计算a
+            a = WMM * (1 - (1 - W_total_0 / WM) ** (1/(1 + b)))
+            a = max(0, min(a, WMM))  # 限制a在合理范围
             deficit = P
             deduct = min(EU, deficit)
             EU -= deduct
@@ -127,20 +130,14 @@ def saturation_excess_runoff(
 
             W_total = WU + WL + WD
 
-            # 蒸发后根据新的土壤含水量重新计算a
-            a = WMM * (1 - (1 - min(W_total, WM) / WM) ** (1 + b))
-            a = max(0, min(a, WMM))  # 限制a在合理范围
-
             R = 0.0
 
         elif PE > 0:
+            # 根据更新后的土壤含水量重新计算a
+            a = WMM * (1 - (1 - W_total_0 / WM) ** (1/(1 + b)))
+            a = max(0, min(a, WMM))  # 限制a在合理范围
             if a + PE <= WMM:
                 R = PE + W_total - WM + WM * (1 - (PE + a) / WMM) ** (b + 1)
-                R = max(R, 0)  # 确保产流量不为负
-                if a + PE > WMM:
-                    a = WMM
-                else:
-                    a = a + PE
             else:
                 R = max(PE - WM + W_total, 0)
 

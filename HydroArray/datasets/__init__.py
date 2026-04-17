@@ -58,6 +58,12 @@ from HydroArray.datasets.basin.camels_us import (
     load_camels_us_attributes,
 )
 
+# River dataset for streamflow forecasting
+from HydroArray.datasets.river import (
+    RiverDataset,
+    Seq2SeqLSTM,
+)
+
 # Multi-source dataset
 from HydroArray.datasets.multi_source import MultiSourceDataset
 
@@ -81,6 +87,9 @@ __all__ = [
     "CAMELS_US_TARGET_VAR",
     "get_camels_us_basins",
     "load_camels_us_attributes",
+    # River dataset
+    "RiverDataset",
+    "Seq2SeqLSTM",
     # Multi-source
     "MultiSourceDataset",
     # MovingMNIST

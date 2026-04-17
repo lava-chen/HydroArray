@@ -11,12 +11,15 @@ from HydroArray.ml.models.registry import register_model
 
 # Import LSTM models
 from .lstm import SimpleLSTM, BidirectionalLSTM
+from HydroArray.datasets.river import Seq2SeqLSTM
 
 # Register models
 register_model("lstm")(SimpleLSTM)
 register_model("bilstm")(BidirectionalLSTM)
+register_model("seq2seq")(Seq2SeqLSTM)
 
 __all__ = [
     "SimpleLSTM",
     "BidirectionalLSTM",
+    "Seq2SeqLSTM",
 ]

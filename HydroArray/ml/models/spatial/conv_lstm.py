@@ -27,7 +27,7 @@ class ConvLSTMCell(nn.Module):
         input_dim: 输入通道数
         hidden_dim: 隐藏状态通道数
         kernel_size: 卷积核大小
-        bias: 是否使用偏置
+        bias: 是否使用偏置1
     """
     def __init__(self, input_dim, hidden_dim, kernel_size, bias=True):
         super().__init__()

@@ -46,14 +46,14 @@ model:
   # Model type: 'convlstm', 'lstm', 'bilstm'
   type: convlstm
 
-  # ConvLSTM hidden dimensions
+  # ConvLSTM hidden dimensions (paper default: [128, 64, 64])
   hidden_dim: 64
 
   # Number of ConvLSTM layers
   num_layers: 3
 
   # Convolutional kernel size
-  kernel_size: 3
+  kernel_size: 5
 
 # ============== Training Configuration ==============
 training:

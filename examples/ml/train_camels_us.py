@@ -20,7 +20,7 @@ from HydroArray.ml.models.sequence.lstm import train_lstm
 
 def main():
     parser = argparse.ArgumentParser(description='Train LSTM on CAMELS-US')
-    parser.add_argument('--config', type=str, default='config_camels_us.yml',
+    parser.add_argument('--config', type=str, default='examples/ml/config_camels_us.yml',
                         help='Path to configuration file')
     parser.add_argument('--epochs', type=int, default=None,
                         help='Override number of epochs from config')
