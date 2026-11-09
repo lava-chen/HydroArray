@@ -1,4 +1,46 @@
+# Editor / IDE
 .vscode/
 
+# Python build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Packaging
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS / editor scratch files
+.DS_Store
+Thumbs.db
+*.swp
+
+# ── Coursework / personal assignment folders ────────────────
+# examples/basic/ contains 水文测验学 programming-completion homework
+# (vernier-comparison / cross-section / runoff-yield / water-level /
+#  pulsation / 蒸发产流 6 assignment sub-directories) — purely personal
+# coursework, not part of the library.
+examples/basic/
+
+# examples/ml/homework_lstm/ contains a personal LSTM 虚拟流量 homework
+# with its data xlsx, ipynb, scaler pkl, and outputs.
+examples/ml/homework_lstm/
+
+# Personal data inputs that are not part of the library demo.
 examples/data/
-examples/runs/
+
+# NOTE: examples/ml/runs/, examples/figures/, examples/plots/ are part of the
+# library's documentation / showcase outputs — keep them tracked.
+
+# Local configuration / secrets (none currently tracked, but guard
+# against future leaks)
+.env
+.env.*
+secrets.*

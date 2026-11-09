@@ -65,6 +65,12 @@ class LinearRouting(RoutingModel):
     def initialize(self, nodes: List[GridNode],
                    parameters: ModelParameters) -> bool:
         """初始化汇流模型"""
+        if not isinstance(parameters, LinearRoutingParameters):
+            raise TypeError(f"Expected LinearRoutingParameters, got {type(parameters)}")
+
+        # Reject invalid parameters (e.g. k=0) at init time.
+        self._validate_parameters(parameters)
+
         self._nodes = nodes
         self._params = parameters
         self._n_nodes = len(nodes)
@@ -111,27 +117,37 @@ class LinearRouting(RoutingModel):
         q_interflow = k_i * self._storage_interflow
         q_baseflow = k_b * self._storage_baseflow
 
-        # 更新蓄量
-        self._storage_overland += inflow - q_overland * dt
-        self._storage_interflow += inflow - q_interflow * dt
-        self._storage_baseflow += inflow - q_baseflow * dt
-
-        # 确保非负
-        self._storage_overland = np.maximum(self._storage_overland, 0)
-        self._storage_interflow = np.maximum(self._storage_interflow, 0)
-        self._storage_baseflow = np.maximum(self._storage_baseflow, 0)
-
-        # 向下游传递（简单延迟传递）
+        # Two-stage update (fixes topological-order bug):
+        # First, compute outflows based on the current storage snapshot.
+        # Then apply ALL (sender -> receiver) transfers in a separate pass.
+        # This prevents a downstream node from being read both as a sink
+        # (consuming its own outflow) and as a source (feeding downstream)
+        # in the same iteration.
         outflow = np.zeros(self._n_nodes)
+        delta_overland = np.zeros(self._n_nodes)
+        delta_interflow = np.zeros(self._n_nodes)
+
         for i in range(self._n_nodes):
             down_idx = self._downstream_mask[i]
-            if down_idx >= 0:
-                # 地表和壤中流传递到下游
-                self._storage_overland[down_idx] += q_overland[i] * dt
-                self._storage_interflow[down_idx] += q_interflow[i] * dt
-            else:
-                # 出口节点
+            if down_idx < 0:
+                # 出口节点：出流贡献至全流域出口
                 outflow[i] = q_overland[i] + q_interflow[i] + q_baseflow[i]
+            else:
+                # 非出口：本次出流先按 dt 缩放，留给下游
+                # (考虑线性水库中 k*dt <= 1 时的部分出流仍残留在库)
+                delta_overland[down_idx] += q_overland[i] * dt
+                delta_interflow[down_idx] += q_interflow[i] * dt
+
+        # Update storages using the new deltas (no in-loop aliasing).
+        self._storage_overland = np.maximum(
+            self._storage_overland + inflow - q_overland * dt + delta_overland, 0
+        )
+        self._storage_interflow = np.maximum(
+            self._storage_interflow + inflow - q_interflow * dt + delta_interflow, 0
+        )
+        self._storage_baseflow = np.maximum(
+            self._storage_baseflow + inflow - q_baseflow * dt, 0
+        )
 
         return outflow
 
@@ -145,18 +161,23 @@ class LinearRouting(RoutingModel):
         k = (self._params.k_overland + self._params.k_interflow +
              self._params.k_baseflow) / 3.0
 
-        q_out = k * self._storage_overland
-        self._storage_overland += inflow - q_out * dt
-        self._storage_overland = np.maximum(self._storage_overland, 0)
+        # Two-stage update: collect transfers first, then apply.
+        # Prevents the same topological-order bug as `route`.
+        s_old = self._storage_overland.copy()
+        q_out = k * s_old
 
-        # 下游传递
+        delta = np.zeros(self._n_nodes)
         outflow = np.zeros(self._n_nodes)
         for i in range(self._n_nodes):
             down_idx = self._downstream_mask[i]
-            if down_idx >= 0:
-                self._storage_overland[down_idx] += q_out[i] * dt
-            else:
+            if down_idx < 0:
                 outflow[i] = q_out[i]
+            else:
+                delta[down_idx] += q_out[i] * dt
+
+        self._storage_overland = np.maximum(
+            s_old + inflow - q_out * dt + delta, 0
+        )
 
         return outflow
 

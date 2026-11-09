@@ -85,7 +85,10 @@ def saturation_excess_runoff(
     if initial_a is not None:
         a = initial_a
     else:
-        a = WMM * ( 1 - ( 1 - W_total / WM) ** (1 + b))
+        # Use 1/(1+b) (Zhao Renjun 1984 textbook form) for consistency
+        # with the PE<0 and PE>0 branches below — both use the same
+        # inverse-curve index 1/(1+b).
+        a = WMM * ( 1 - ( 1 - W_total / WM) ** (1 / (1 + b)))
 
     for _, row in data_df.iterrows():
         WU_0, WL_0, WD_0 = WU, WL, WD

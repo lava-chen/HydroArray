@@ -137,7 +137,15 @@ def calculate_pbias(observed: np.ndarray, simulated: np.ndarray) -> float:
     if len(obs) == 0:
         return np.nan
 
-    return 100 * np.sum(sim - obs) / np.sum(obs)
+    denom = np.sum(obs)
+    if denom == 0:
+        # PBIAS is undefined when total observed flow is 0.
+        # Return NaN to keep behavior consistent with
+        # analysis.statistics.pbiass and to avoid training loops
+        # silently propagating inf.
+        return np.nan
+
+    return 100 * np.sum(sim - obs) / denom
 
 
 def calculate_bias(observed: np.ndarray, simulated: np.ndarray) -> float:

@@ -282,6 +282,11 @@ def use_hydro_style(style: str = "hess", chinese: bool = True, dpi: int = 300) -
     rc = cfg["rc"].copy()
     rc["figure.dpi"] = dpi
     rc["savefig.dpi"] = dpi
+    rc["svg.fonttype"] = "none"
+    rc["pdf.fonttype"] = 42
+    rc["ps.fonttype"] = 42
+    rc["mathtext.fontset"] = "stix"
+    rc["axes.unicode_minus"] = False
 
     plt.rcParams.update(rc)
 

@@ -438,6 +438,9 @@ class ScipyOptimizer(CalibrationMethod):
 
         # Determine which metric to optimize for scipy
         obj_type = self.config.objective
+        options = dict(self.options)
+        options.setdefault("maxiter", self.config.max_evaluations)
+        options.setdefault("maxfun", self.config.max_evaluations)
 
         # Wrap objective for scipy (minimize scalar)
         def wrapped_obj(x):
@@ -453,8 +456,8 @@ class ScipyOptimizer(CalibrationMethod):
             wrapped_obj,
             x0,
             method=self.method,
-            bounds=bounds if self.method == 'L-BFGS-B' else None,
-            options=self.options
+            bounds=bounds if self.method in {'L-BFGS-B', 'Powell', 'TNC', 'SLSQP'} else None,
+            options=options
         )
 
         best_params = dict(zip(param_names, result.x))

@@ -18,6 +18,7 @@ from .metrics import (
     cms_to_mm,
     evaluate_model,
 )
+from .diurnal import diurnal_factor, hourly_pet_from_daily
 
 __all__ = [
     "Config",
@@ -38,4 +39,7 @@ __all__ = [
     "mm_to_cms",
     "cms_to_mm",
     "evaluate_model",
+    # Diurnal downscaling
+    "diurnal_factor",
+    "hourly_pet_from_daily",
 ]

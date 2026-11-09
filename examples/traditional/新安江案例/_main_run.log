@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "E:\Projects\HydroArray\examples\traditional\新安江案例\_time_main.py", line 30, in <module>
+    import main
+  File "E:\Projects\HydroArray\examples\traditional\新安江案例\main.py", line 33, in <module>
+    from xaj_calibration import (
+        calibrate_daily, calibrate_event, run_event_validation,
+    )
+  File "E:\Projects\HydroArray\examples\traditional\新安江案例\xaj_calibration.py", line 23, in <module>
+    from xaj_config import (
+    ...<4 lines>...
+    )
+ImportError: cannot import name 'PARAM_BOUNDS' from 'xaj_config' (E:\Projects\HydroArray\examples\traditional\新安江案例\xaj_config.py)
+Traceback (most recent call last):
+  File "E:\Projects\HydroArray\examples\traditional\新安江案例\_time_main.py", line 30, in <module>
+    import main
+  File "E:\Projects\HydroArray\examples\traditional\新安江案例\main.py", line 33, in <module>
+    from xaj_calibration import (
+        calibrate_daily, calibrate_event, run_event_validation,
+    )
+  File "E:\Projects\HydroArray\examples\traditional\新安江案例\xaj_calibration.py", line 23, in <module>
+    from xaj_config import (
+    ...<4 lines>...
+    )
+ImportError: cannot import name 'PARAM_BOUNDS' from 'xaj_config' (E:\Projects\HydroArray\examples\traditional\新安江案例\xaj_config.py)

@@ -77,6 +77,12 @@ class MuskingumRouting(RoutingModel):
             nodes: 河段/网格节点
             parameters: 马斯京根参数
         """
+        if not isinstance(parameters, MuskingumParameters):
+            raise TypeError(f"Expected MuskingumParameters, got {type(parameters)}")
+
+        # Reject invalid parameters (e.g. K<=0, x>0.5) at init time.
+        self._validate_parameters(parameters)
+
         self._nodes = nodes
         self._params = parameters
         self._n_reaches = len(nodes)

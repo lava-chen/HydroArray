@@ -77,17 +77,16 @@ def run_xinanjiang_model():
 
     # Model parameters (typical values for a Chinese catchment)
     params = ha.XinAnjiangParameters(
-        K=0.5,      # Evapotranspiration ratio
-        B=0.1,     # Distribution parameter
-        IMP=0.0,   # Impermeable fraction
-        WM=100.0,  # Maximum tension water storage (mm)
-        WUM=20.0,  # Upper zone tension water (mm)
-        WLM=80.0,  # Lower zone tension water (mm)
-        WDM=0.0,   # Deep zone tension water (mm)
-        SM=15.0,   # Free water storage (mm)
-        KI=0.4,    # Interflow coefficient
-        KG=0.05,   # Groundwater coefficient
-        KKX=0.7    # Deep percolation coefficient
+        K=0.8,      # Evapotranspiration ratio
+        B=0.3,      # Distribution parameter
+        IMP=0.0,    # Impermeable fraction
+        WM=120.0,   # Maximum tension water storage (mm) = WUM + WLM + WDM
+        WUM=20.0,   # Upper zone tension water (mm)
+        WLM=60.0,   # Lower zone tension water (mm)
+        WDM=40.0,   # Deep zone tension water (mm)
+        SM=15.0,    # Free water storage (mm)
+        KI=0.4,     # Interflow coefficient
+        KG=0.05,    # Groundwater coefficient
     )
 
     model.initialize(nodes, params)

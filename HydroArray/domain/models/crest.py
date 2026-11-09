@@ -71,6 +71,9 @@ class CRESTModel(WaterBalanceModel):
         if not isinstance(parameters, CRESTParameters):
             raise TypeError(f"Expected CRESTParameters, got {type(parameters)}")
 
+        # Reject invalid parameters (e.g. WM<=0) at init time.
+        self._validate_parameters(parameters)
+
         self._nodes = nodes
         self._params = parameters
         self._n_nodes = len(nodes)

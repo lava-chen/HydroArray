@@ -153,6 +153,26 @@ class WaterBalanceModel(ABC):
         """
         pass
 
+    def _validate_parameters(self, parameters: ModelParameters) -> None:
+        """Validate parameter values via ModelParameters.validate().
+
+        Subclasses should call this in initialize() to surface invalid
+        parameters as a ValueError instead of silently producing garbage
+        results. This enforces the PCTIM <= ADIMP, kq in (0,1], etc.
+        checks that the @register_parameters-decorated dataclasses define.
+
+        Args:
+            parameters: ModelParameters instance to validate.
+
+        Raises:
+            ValueError: If parameters.validate() returns (False, message).
+        """
+        ok, msg = parameters.validate()
+        if not ok:
+            raise ValueError(
+                f"{type(parameters).__name__} validation failed: {msg}"
+            )
+
     @abstractmethod
     def water_balance(self, step_hours: float, precip: np.ndarray,
                       pet: np.ndarray) -> Tuple[np.ndarray, np.ndarray, np.ndarray, Dict]:
@@ -204,8 +224,17 @@ class WaterBalanceModel(ABC):
 
         Args:
             path: Input file path (.npz format).
+
+        Raises:
+            ValueError: If the file was saved with pickle (e.g. contains
+                object arrays). Only pure-ndarray state files are accepted
+                to avoid the RCE risk of np.load(allow_pickle=True) on
+                untrusted inputs.
         """
-        data = np.load(path, allow_pickle=True)
+        # allow_pickle=False enforces that the .npz was saved as pure
+        # ndarray state. A legacy .npz saved with pickle (object dtype)
+        # will raise UnpicklingError, which is the desired behavior.
+        data = np.load(path, allow_pickle=False)
         self.set_states(dict(data))
 
 
@@ -233,6 +262,25 @@ class RoutingModel(ABC):
             初始化是否成功
         """
         pass
+
+    def _validate_parameters(self, parameters: ModelParameters) -> None:
+        """Validate parameter values via ModelParameters.validate().
+
+        Subclasses should call this in initialize() to surface invalid
+        parameters as a ValueError instead of silently producing garbage
+        results.
+
+        Args:
+            parameters: ModelParameters instance to validate.
+
+        Raises:
+            ValueError: If parameters.validate() returns (False, message).
+        """
+        ok, msg = parameters.validate()
+        if not ok:
+            raise ValueError(
+                f"{type(parameters).__name__} validation failed: {msg}"
+            )
 
     @abstractmethod
     def route(self, step_hours: float, inflow: np.ndarray) -> np.ndarray:

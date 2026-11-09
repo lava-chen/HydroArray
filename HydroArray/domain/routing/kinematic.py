@@ -69,6 +69,12 @@ class KinematicRouting(RoutingModel):
     def initialize(self, nodes: List[GridNode],
                    parameters: ModelParameters) -> bool:
         """初始化运动波汇流模型"""
+        if not isinstance(parameters, KinematicRoutingParameters):
+            raise TypeError(f"Expected KinematicRoutingParameters, got {type(parameters)}")
+
+        # Reject invalid parameters (e.g. Manning n<=0) at init time.
+        self._validate_parameters(parameters)
+
         self._nodes = nodes
         self._params = parameters
         self._n_nodes = len(nodes)
@@ -106,45 +112,57 @@ class KinematicRouting(RoutingModel):
     def route(self, step_hours: float, inflow: np.ndarray) -> np.ndarray:
         """运动波汇流演算
 
-        使用 Gamma 单位线进行汇流演算。
+        使用线性水库近似运动波。每节点按传播时间计算消退系数 k：
+        - 比例 k 流向出口（出口节点直接产生 outflow；非出口节点累加
+          到下游节点的入流缓存中）
+        - 比例 (1-k) 残留在本节点，等待下一轮流出
+
+        这样保证流量严格按拓扑序沿河网传递，残留在多步中排空。
 
         Args:
             step_hours: 时间步长（小时）
             inflow: 入流数组
 
         Returns:
-            出流数组
+            出流数组（出口节点非零）
         """
         inflow = np.asarray(inflow)
         if inflow.shape != (self._n_nodes,):
             inflow = np.broadcast_to(inflow.mean(), self._n_nodes)
 
-        # 使用线性水库近似运动波
-        # 每个节点的消退系数与其传播时间相关
-        outflow = np.zeros(self._n_nodes)
+        # Initialize the in-transit buffer on first call.
+        if not hasattr(self, "_pending_inflow") or self._pending_inflow is None:
+            self._pending_inflow = np.zeros(self._n_nodes)
 
-        for i in range(self._n_nodes):
+        # Lateral inflow this step = explicit inflow + whatever was in-transit
+        # from upstream nodes in previous steps.
+        downstream_inflow = self._pending_inflow + inflow
+        n = self._n_nodes
+        outflow = np.zeros(n)
+        new_pending = np.zeros(n)
+
+        for i in range(n):
             tt = max(self._travel_time[i], 0.1)
-            # 简化的运动波：K = dt / tt
-            k = step_hours / tt
-            k = min(k, 0.99)  # 确保稳定
+            k = min(step_hours / tt, 0.99)  # CFL-like stability cap
 
-            # 出口节点直接输出
+            # k 比例流向出口/下游；(1-k) 残留在本节点
+            q_in_i = downstream_inflow[i]
+            q_out = k * q_in_i
+            residual = (1.0 - k) * q_in_i
+
             down_idx = self._downstream_mask[i]
-            if down_idx < 0:
-                outflow[i] = k * inflow[i]
+            if down_idx >= 0:
+                # 流向下游：加到下游下一轮的入流
+                new_pending[down_idx] += q_out
             else:
-                # 传递到下游
-                pass  # 下游由其自己的计算处理
+                # 出口：产生 outflow
+                outflow[i] = q_out
+                # 出口节点的残留丢弃（这是简化运动波的局限）
 
-        # 汇总到出口
-        exit_idx = np.where(self._downstream_mask == -1)[0]
-        if len(exit_idx) > 0:
-            total_input = inflow.sum()
-            # 简单分配到出口
-            for idx in exit_idx:
-                outflow[idx] = total_input / len(exit_idx)
+            # 残留留在本节点下一轮再排
+            new_pending[i] += residual
 
+        self._pending_inflow = new_pending
         return outflow
 
     def route_kinematic_wave(self, step_hours: float,

@@ -100,6 +100,9 @@ class SACModel(WaterBalanceModel):
         if not isinstance(parameters, SACParameters):
             raise TypeError(f"Expected SACParameters, got {type(parameters)}")
 
+        # Reject invalid parameters (e.g. PCTIM > ADIMP) at init time.
+        self._validate_parameters(parameters)
+
         self._nodes = nodes
         self._params = parameters
         self._n_nodes = len(nodes)

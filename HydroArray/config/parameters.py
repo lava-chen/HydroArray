@@ -5,10 +5,11 @@
 """
 
 from dataclasses import dataclass, field
-from typing import Dict, Type, Any, Optional, Tuple
+from typing import Dict, Type, Any, Optional, Tuple, Iterable, Mapping, Union
 import inspect
 
 from HydroArray.domain.models.base import ModelParameters
+from HydroArray.domain.calibration import ParameterBounds
 
 
 # 全局参数注册表
@@ -162,3 +163,105 @@ class ParametersBundle:
 
         bundle.extra_params = data.get('extra', {})
         return bundle
+
+
+# ──────────── ref 表 → ParameterBounds 列表 ────────────
+
+_REF_SCALAR_FACTOR = 0.5  # 单值时的区间膨胀系数: [v*(1-F), v*(1+F)]
+
+
+def _parse_ref_value(raw: Union[str, float, int, None]) -> Optional[Tuple[float, float, float]]:
+    """解析一行 ref_value, 返回 (lo, hi, mid) 或 None(无法解析,如 '0.7-KG')。
+
+    支持:
+        - 数字 (1, 0.3, 0.01): 单值,推 [v*(1-F), v*(1+F)]
+        - 字符串单值 ("0.3"): 同上
+        - 字符串区间 ("0.8~1.2" / "0.8~ 1.2"): 直接 (lo, hi)
+        - None / 空字符串: 返回 None
+        - 含字母变量 ("0.7-KG"): 返回 None(调用方应用 overrides)
+    """
+    if raw is None:
+        return None
+    s = str(raw).strip()
+    if not s:
+        return None
+
+    # 区间: a~b
+    if "~" in s:
+        try:
+            lo_s, hi_s = s.split("~", 1)
+            lo, hi = float(lo_s.strip()), float(hi_s.strip())
+        except ValueError:
+            return None
+        if hi < lo:
+            lo, hi = hi, lo
+        return lo, hi, 0.5 * (lo + hi)
+
+    # 单值:必须纯数字
+    try:
+        v = float(s)
+    except ValueError:
+        return None
+    half = abs(v) * _REF_SCALAR_FACTOR
+    # v=0 时退化为 [-1, 1] 兜底
+    if half == 0.0:
+        half = 1.0
+    return v - half, v + half, v
+
+
+def bounds_from_ref_table(
+    ref_table: Mapping[str, Any],
+    overrides: Optional[Mapping[str, Tuple[float, float]]] = None,
+    *,
+    name_alias: Optional[Mapping[str, str]] = None,
+) -> list:
+    """从 ref 表(通常是 params_ref.yaml 展平的 dict)生成 ParameterBounds 列表。
+
+    Args:
+        ref_table: {yaml_name: ref_value, ...},如 {"K": "0.8~1.2", "B": 0.3, ...}
+        overrides: yaml 里没有/无法解析的项,手填 {param_name: (lo, hi)};
+                  param_name 是 XinAnjiangParameters 字段名(经 name_alias 映射后)
+        name_alias: yaml 名 → 模型字段名的映射,默认 {"IM": "IMP"}
+
+    Returns:
+        list[ParameterBounds],顺序 = ref_table 出现顺序 + overrides 出现顺序
+
+    Example:
+        >>> ref = {"K": "0.8~1.2", "B": 0.3, "WM": 120, "IM": 0.01}
+        >>> bounds_from_ref_table(
+        ...     ref,
+        ...     overrides={"KE": (1.0, 72.0)},
+        ... )
+        [ParameterBounds('K', 0.8, 1.2, 1.0),
+         ParameterBounds('B', 0.15, 0.45, 0.3),
+         ParameterBounds('WM', 60.0, 180.0, 120.0),
+         ParameterBounds('IMP', 0.005, 0.015, 0.01),
+         ParameterBounds('KE', 1.0, 72.0, 36.5)]
+    """
+    if name_alias is None:
+        name_alias = {"IM": "IMP"}
+
+    bounds: list = []
+    seen: set = set()
+
+    # 1) 按 ref_table 顺序
+    for yaml_name, raw in ref_table.items():
+        field_name = name_alias.get(yaml_name, yaml_name)
+        parsed = _parse_ref_value(raw)
+        if parsed is None:
+            # 跳过无法解析的(如 "0.7-KG")
+            continue
+        lo, hi, mid = parsed
+        bounds.append(ParameterBounds(field_name, lo, hi, default_value=mid))
+        seen.add(field_name)
+
+    # 2) 追加 overrides(yaml 里没有的项)
+    if overrides:
+        for field_name, (lo, hi) in overrides.items():
+            if field_name in seen:
+                continue  # 已在 ref 中,避免重复
+            mid = 0.5 * (lo + hi)
+            bounds.append(ParameterBounds(field_name, lo, hi, default_value=mid))
+            seen.add(field_name)
+
+    return bounds

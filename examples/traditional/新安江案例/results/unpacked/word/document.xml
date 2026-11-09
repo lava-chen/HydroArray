@@ -1,0 +1,4828 @@
+<?xml version="1.0" encoding="ascii"?>
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mo="http://schemas.microsoft.com/office/mac/office/2008/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 wp14">
+  <w:body>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Title"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#26032;&#23433;&#27743;&#27169;&#22411;&#26696;&#20363; &#183; &#23436;&#25972;&#25216;&#26415;&#25253;&#21578;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="IntenseQuote"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#27969;&#22495;: &#21576;&#26449;&#27969;&#22495; (290 km&#178;)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="IntenseQuote"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#36755;&#20837;: `xaj_daily.csv` / `xaj_hourly.csv`</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="IntenseQuote"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#27169;&#22411;: HydroArray `XinAnjiangModel` (&#19977;&#27700;&#28304;) + CI/CG &#36864;&#27700; + `MuskingumRouting`</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="IntenseQuote"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#35780;&#20215;&#20381;&#25454;: SL 250&#12298;&#27700;&#25991;&#24773;&#25253;&#39044;&#25253;&#35268;&#33539;&#12299;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:t>1. &#20219;&#21153;&#19982;&#26041;&#27861;&#27010;&#36848;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#26412;&#26696;&#20363;&#22522;&#20110; HydroArray &#36890;&#29992; API &#23436;&#25104;&#21576;&#26449;&#27969;&#22495;&#26032;&#23433;&#27743;&#27169;&#22411;&#30340;&#20004;&#23610;&#24230;&#27169;&#25311;:</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>**&#26085;&#27169;&#22411;**: 24h &#27493;&#38271;&#36830;&#32493;&#27169;&#25311; 1989-1996 &#24180; (2922 &#22825;), &#20854;&#20013; 1989 &#24180;&#20026; warm-up &#39044;&#28909;&#26399;, 1990-1993 &#29575;&#23450;, 1994-1996 &#39564;&#35777;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>**&#27425;&#27946;&#27169;&#22411;**: 1h &#27493;&#38271;, &#23545; 15 &#22330;&#27946;&#27700;&#36880;&#22330;&#27169;&#25311;, 6 &#22330;&#29575;&#23450; (1990-1993) + 9 &#22330;&#39564;&#35777; (&#21547; 1989 &#39044;&#28909;&#26399; 4 &#22330; + 1994-1996 &#39564;&#35777;&#26399; 5 &#22330;)&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>**&#27169;&#22411;&#32467;&#26500; (&#19977;&#27700;&#28304;&#26032;&#23433;&#27743;&#27169;&#22411;):**</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#33976;&#25955;&#21457;: &#19977;&#23618;&#27169;&#22411; (&#19978;&#23618; EU + &#19979;&#23618; EL + &#28145;&#23618; ED)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#20135;&#27969;: &#33988;&#28385;&#20135;&#27969; (&#24352;&#21147;&#27700;&#33988;&#27700;&#23481;&#37327;&#20998;&#24067;&#26354;&#32447;, &#21442;&#25968; B)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#20998;&#27700;&#28304;: &#33258;&#30001;&#27700;&#33988;&#27700;&#24211;&#20998;&#20026;&#22320;&#34920;&#24452;&#27969; RS&#12289;&#22756;&#20013;&#27969; RI&#12289;&#22320;&#19979;&#27700; RG (&#21442;&#25968; SM, EX, KI, KG)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#36864;&#27700;: RI &#32463; CI &#32447;&#24615;&#27700;&#24211;&#36864;&#27700;, RG &#32463; CG &#32447;&#24615;&#27700;&#24211;&#36864;&#27700;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#27719;&#27969;: &#24635;&#20837;&#27969; (RS + QI + QG) &#32463; Muskingum &#27827;&#36947;&#27719;&#27969;&#21040;&#20986;&#21475;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>**&#29575;&#23450;&#31574;&#30053;:**</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#26085;&#27169;&#22411;&#20998;&#23618;&#29575;&#23450; (&#20165;&#29575;&#23450;&#26399; 1990-1993 &#21442;&#19982;&#20248;&#21270;):</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t xml:space="preserve">  - &#38454;&#27573; 1: GA + L-BFGS-B &#20248;&#21270;&#33976;&#25955;&#21457;+&#20135;&#27969;&#21442;&#25968; (K, B, WUM, WLM, C, IMP), &#30447;&#27700;&#37327;&#35823;&#24046;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t xml:space="preserve">  - &#38454;&#27573; 2: DE &#20840;&#23616;&#24494;&#35843;, &#21152;&#20837;&#20998;&#27700;&#28304;&#21442;&#25968; (SM, EX, KI, KG, CI, CG), &#32508;&#21512; NSE+&#27700;&#37327;+&#23792;&#24046;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#27425;&#27946;&#27169;&#22411; (&#29575;&#23450;&#26399; 1990-1993 &#30340; 6 &#22330;&#27946;&#27700;&#22810;&#22330;&#32852;&#21512;&#29575;&#23450;):</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t xml:space="preserve">  - &#32487;&#25215;&#26085;&#27169;&#22411;&#20135;&#27969;&#21442;&#25968; (C, WM, WUM, WLM, WDM, IMP, EX)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t xml:space="preserve">  - &#37325;&#26032;&#29575;&#23450; K, B (&#26085;&#8594;&#23567;&#26102;&#23610;&#24230;&#36716;&#25442;&#38656;&#20462;&#27491;&#33976;&#21457;&#19982;&#20135;&#27969;&#38750;&#32447;&#24615;)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t xml:space="preserve">  - &#29575;&#23450; SM, KI, KG (&#20998;&#27700;&#28304;), CI, CG (&#36864;&#27700;), KE, xe (Muskingum &#27719;&#27969;)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t xml:space="preserve">  - DE &#20840;&#23616;&#20248;&#21270;, &#20197;&#36880;&#22330; NSE/&#27946;&#37327;/&#27946;&#23792;/&#23792;&#26102;&#32508;&#21512;&#24471;&#20998;&#24179;&#22343;&#20540;&#20026;&#20027;, &#24182;&#21152;&#20837;&#24046;&#22330;&#24809;&#32602;&#19982;&#31283;&#20581;&#24615;&#32422;&#26463;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t xml:space="preserve">  - Muskingum &#31283;&#23450;&#24615;&#32422;&#26463;: 2&#215;KE&#215;xe &#8804; dt &#8804; 2&#215;KE&#215;(1&#8722;xe), dt=1h</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t xml:space="preserve">  - 48h &#39044;&#28909;&#26399; (&#19981;&#21442;&#19982;&#25351;&#26631;&#35745;&#31639;)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>**&#35780;&#20215;&#20381;&#25454;**: SL 250&#12298;&#27700;&#25991;&#24773;&#25253;&#39044;&#25253;&#35268;&#33539;&#12299;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#26085;&#24452;&#27969;&#28145;&#35768;&#21487;&#30456;&#23545;&#35823;&#24046;: 20%</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#27425;&#27946;&#27946;&#37327;/&#27946;&#23792;&#35768;&#21487;&#30456;&#23545;&#35823;&#24046;: 20%</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#27425;&#27946;&#23792;&#26102;&#35768;&#21487;&#32477;&#23545;&#35823;&#24046;: 3 h</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2. &#25968;&#25454;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>**&#26085;&#36164;&#26009;** `xaj_daily.csv`: 1989-01-01 ~ 1996-12-31, &#20849; 2922 &#22825;, &#21547; 10 &#31449;&#38477;&#38632;&#12289;&#33976;&#21457;&#30399;&#33976;&#21457; (mm/d) &#21644;&#20986;&#21475;&#27969;&#37327; (m&#179;/s)&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>**&#23567;&#26102;&#36164;&#26009;** `xaj_hourly.csv`: 1989-04-11 ~ 1996-07-04, &#26102;&#38388;&#27493;&#38271; 1h, &#20849; 5683 &#23567;&#26102;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>**&#23376;&#27969;&#22495;&#37197;&#32622;** `subbasins.yaml`: 10 &#20010;&#23376;&#27969;&#22495;, &#38754;&#31215;&#27604;&#20043;&#21644; 1.0, &#27969;&#22495;&#24635;&#38754;&#31215; 290.08 km&#178;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>**&#21442;&#25968;&#21442;&#32771;** `params_ref.yaml`: 17 &#20010;&#21442;&#25968;&#30340;&#21442;&#32771;&#20540;/&#33539;&#22260;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>**&#22330;&#27425;&#37197;&#32622;** `events_event.yaml`: 15 &#22330;&#27946;&#27700;&#12290;&#26412;&#26696;&#20363;&#25353;&#35838;&#31243;&#35201;&#27714;&#37319;&#29992; 1990-1993 &#24180;&#20849; 6 &#22330;&#36827;&#34892;&#32852;&#21512;&#29575;&#23450;, 1989 &#24180;&#20107;&#20214;&#20316;&#20026;&#39044;&#28909;&#26399;&#26816;&#39564;, 1994-1996 &#24180;&#20107;&#20214;&#20316;&#20026;&#27491;&#24335;&#39564;&#35777;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>**&#38754;&#24179;&#22343;&#36755;&#20837;&#22788;&#29702;:**</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#38754;&#38632;&#37327; = &#931;(&#23376;&#27969;&#22495;&#38754;&#31215;&#27604; &#215; &#31449;&#38477;&#38632;)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#26085;&#33976;&#21457;: &#30452;&#25509;&#35835;&#21462; `evap` &#21015; (&#33976;&#21457;&#30399;&#33976;&#21457;, K &#20026;&#25240;&#31639;&#31995;&#25968;)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#23567;&#26102;&#33976;&#21457;: &#26085;&#33976;&#21457;&#25353; 24 &#31561;&#20998;&#19979;&#25512;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#27969;&#37327;: m&#179;/s &#8596; mm/&#27493; (cms_to_mm / mm_to_cms)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:t>3. &#21442;&#25968;&#29575;&#23450;&#32467;&#26524;&#34920;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#19979;&#34920;&#27719;&#24635;&#26085;&#27169;&#22411;&#19982;&#27425;&#27946;&#27169;&#22411;&#29575;&#23450;&#21518;&#30340;&#26368;&#32456;&#21442;&#25968;&#20540;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#26085;&#27169;&#22411;&#38454;&#27573; 2 &#24050;&#21152;&#20837;&#20998;&#27700;&#28304;&#21442;&#25968; (SM, EX, KI, KG, CI, CG); &#27425;&#27946;&#27169;&#22411;&#32487;&#25215;&#26085;&#27169;&#22411;&#37096;&#20998;&#20135;&#27969;&#21442;&#25968;, &#37325;&#26032;&#29575;&#23450; K, B (&#23610;&#24230;&#36716;&#25442;) &#21450; SM, KI, KG, CI, CG, KE, xe (&#20998;&#27700;&#28304;/&#36864;&#27700;/&#27719;&#27969;)&#12290;CS, L &#22312; HydroArray &#30340; XAJRunner &#20013;&#26410;&#23454;&#29616;, &#19981;&#21442;&#19982;&#29575;&#23450;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblStyle w:val="TableGrid"/>
+        <w:tblW w:type="auto" w:w="0"/>
+        <w:tblLook w:firstColumn="1" w:firstRow="1" w:lastColumn="0" w:lastRow="0" w:noHBand="0" w:noVBand="1" w:val="04A0"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="1728"/>
+        <w:gridCol w:w="1728"/>
+        <w:gridCol w:w="1728"/>
+        <w:gridCol w:w="1728"/>
+        <w:gridCol w:w="1728"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#21442;&#25968;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#21547;&#20041;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#21442;&#32771;&#20540;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#26085;&#27169;&#22411;&#26368;&#32456;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#27425;&#27946;&#27169;&#22411;&#26368;&#32456;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>K</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#33976;&#21457;&#30399;&#25240;&#31639;&#31995;&#25968;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.8~1.2</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1.195</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.345 (&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>B</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#33988;&#27700;&#23481;&#37327;&#20998;&#24067;&#26354;&#32447;&#25351;&#25968;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.3</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.500</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.067 (&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>C</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#28145;&#23618;&#25955;&#21457;&#31995;&#25968;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.18</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.185</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.185 (&#32487;&#25215;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>WM</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#24352;&#21147;&#27700;&#23481;&#37327; (mm)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>120</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>120.000</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>120.000 (&#32487;&#25215;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>WUM</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#19978;&#23618;&#24352;&#21147;&#27700;&#23481;&#37327; (mm)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>20</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>22.764</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>22.764 (&#32487;&#25215;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>WLM</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#19979;&#23618;&#24352;&#21147;&#27700;&#23481;&#37327; (mm)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>60</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>41.057</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>41.057 (&#32487;&#25215;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>WDM</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#28145;&#23618;&#24352;&#21147;&#27700;&#23481;&#37327; (mm)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#8212;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>56.180</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>56.180 (&#32487;&#25215;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>IMP</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#19981;&#36879;&#27700;&#38754;&#31215;&#27604;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.01</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.009</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.009 (&#32487;&#25215;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>SM</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#33258;&#30001;&#27700;&#23481;&#37327; (mm)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>10~30</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>21.113</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>30.309 (&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>EX</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#33258;&#30001;&#27700;&#23481;&#37327;&#20998;&#24067;&#26354;&#32447;&#25351;&#25968;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1.5</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1.443</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1.443 (&#32487;&#25215;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>KI</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#22756;&#20013;&#27969;&#20986;&#27969;&#31995;&#25968;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.7-KG</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.405</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.050 (&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>KG</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#22320;&#19979;&#27700;&#20986;&#27969;&#31995;&#25968;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.01~0.69</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.252</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.156 (&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>CI</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#22756;&#20013;&#27969;&#28040;&#36864;&#31995;&#25968;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.01~0.9</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.416</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.477 (&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>CG</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#22320;&#19979;&#27700;&#28040;&#36864;&#31995;&#25968;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.98~0.998</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.952</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.976 (&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>CS</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#27827;&#32593;&#33988;&#27700;&#28040;&#36864;&#31995;&#25968;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.1~0.9</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.500</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.500 (&#32487;&#25215;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>L</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#27827;&#32593;&#27719;&#27969;&#28382;&#26102; (&#26102;&#27573;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0~2</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1.000</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1.000 (&#32487;&#25215;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>KE</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>Muskingum K (h)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#8212;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>24.000</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1.985 (&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>xe</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>Muskingum x</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.30~0.35</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.325</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1728"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.101 (&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:t>4. &#35823;&#24046;&#32479;&#35745;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>4.1 &#26085;&#27169;&#22411;&#20998;&#24180;&#35823;&#24046;&#32479;&#35745;&#34920;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>"&#21512;&#26684;&#29575;"&#20026;&#26085;&#20540;&#24452;&#27969;&#28145;&#30456;&#23545;&#35823;&#24046;&#32477;&#23545;&#20540;&#19981;&#36229;&#36807; 20% &#30340;&#22825;&#25968;&#21344;&#27604; (SL 250)&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#34920;&#20013;&#38500;&#36880;&#24180;&#32467;&#26524;&#22806;&#65292;&#22686;&#21015; 1990-1996 &#24180;&#22343;&#20540;&#65292;&#29992;&#20110;&#28385;&#36275;&#8220;&#20998;&#21035;&#20998;&#24180;&#32479;&#35745;&#12289;&#27599;&#24180;&#22343;&#20540;&#12289;&#25972;&#20010;&#26102;&#26399;&#32479;&#35745;&#8221;&#30340;&#25552;&#20132;&#35201;&#27714;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblStyle w:val="TableGrid"/>
+        <w:tblW w:type="auto" w:w="0"/>
+        <w:tblLook w:firstColumn="1" w:firstRow="1" w:lastColumn="0" w:lastRow="0" w:noHBand="0" w:noVBand="1" w:val="04A0"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#24180;&#20221;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#22825;&#25968;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>NSE</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#24452;&#27969;&#28145;&#30456;&#23545;&#35823;&#24046; (%)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#21512;&#26684;&#29575; (%)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#23454;&#27979;&#24452;&#27969;&#28145; (mm/a)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#35745;&#31639;&#24452;&#27969;&#28145; (mm/a)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1989 (&#39044;&#28909;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>365</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.917</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-1.28%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>30.68</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1621.4</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1600.6</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1990 (&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>365</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.895</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-6.02%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>37.26</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1282.2</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1205.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1991 (&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>365</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.824</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-3.04%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>45.75</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1666.2</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1615.6</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1992 (&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>366</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.796</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+4.06%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>39.62</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1171.4</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1219.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1993 (&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>365</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.932</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+4.85%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>51.23</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1966.8</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>2062.2</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1994 (&#39564;&#35777;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>365</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.892</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+6.43%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>35.62</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1167.5</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1242.6</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1995 (&#39564;&#35777;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>365</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.904</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+4.15%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>31.78</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1703.6</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1774.3</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1996 (&#39564;&#35777;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>366</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.952</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+2.47%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>38.25</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1935.2</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1983.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1990-1996 &#24180;&#22343;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>365</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.885</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+1.84%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>39.93</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1556.1</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1585.9</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>4.2 &#26085;&#27169;&#22411;&#29575;&#23450;&#26399;/&#39564;&#35777;&#26399;&#32479;&#35745;&#34920;</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblStyle w:val="TableGrid"/>
+        <w:tblW w:type="auto" w:w="0"/>
+        <w:tblLook w:firstColumn="1" w:firstRow="1" w:lastColumn="0" w:lastRow="0" w:noHBand="0" w:noVBand="1" w:val="04A0"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#26102;&#27573;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#22825;&#25968;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>NSE</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#24452;&#27969;&#28145;&#30456;&#23545;&#35823;&#24046; (%)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#21512;&#26684;&#29575; (%)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#23454;&#27979;&#24452;&#27969;&#28145; (mm)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#35745;&#31639;&#24452;&#27969;&#28145; (mm)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#29575;&#23450;&#26399; 1990-1993</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1461</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.883</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+0.25%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>43.46</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>6086.6</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>6101.7</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#39564;&#35777;&#26399; 1994-1996</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1096</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.930</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+4.03%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>35.22</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>4806.3</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>4999.8</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#25972;&#26399; 1990-1996</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>2557</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.912</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+1.92%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>39.93</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>10892.9</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>11101.6</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>4.3 &#27425;&#27946;&#27169;&#22411;&#20998;&#22330;&#27425;&#35823;&#24046;&#32479;&#35745;&#34920; (4 &#25351;&#26631; &#215; &#27599;&#22330;)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>4 &#20010;&#25351;&#26631;: &#24452;&#27969;&#28145;&#30456;&#23545;&#35823;&#24046;&#12289;&#27946;&#23792;&#30456;&#23545;&#35823;&#24046;&#12289;&#23792;&#26102;&#24046; (h)&#12289;NSE&#12290;&#8220;&#24615;&#36136;&#8221;&#21015;&#21306;&#20998;&#39044;&#28909;&#26399;&#12289;&#29575;&#23450;&#26399;(&#21442;&#19982;&#29575;&#23450;)&#19982;&#27491;&#24335;&#39564;&#35777;&#26399;&#12290;&#26411;&#34892;&#8220;&#39564;&#35777;&#27719;&#24635;&#8221;&#20165;&#23545; 1994-1996 &#27491;&#24335;&#39564;&#35777;&#22330;&#27425;&#20570;&#31639;&#26415;&#24179;&#22343;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblStyle w:val="TableGrid"/>
+        <w:tblW w:type="auto" w:w="0"/>
+        <w:tblLook w:firstColumn="1" w:firstRow="1" w:lastColumn="0" w:lastRow="0" w:noHBand="0" w:noVBand="1" w:val="04A0"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+        <w:gridCol w:w="1234"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#22330;&#27425;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#24615;&#36136;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#36215;&#27490;&#26102;&#38388;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#24452;&#27969;&#28145;&#30456;&#23545;&#35823;&#24046; (%)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#27946;&#23792;&#30456;&#23545;&#35823;&#24046; (%)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#23792;&#26102;&#24046; (h)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>NSE</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#39044;&#28909;&#26399;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1989-04-11 04:00 ~ 04-16 07:00</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-34.43%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-46.05%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+0.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.529</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>2</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#39044;&#28909;&#26399;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1989-05-20 20:00 ~ 05-25 08:00</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-45.25%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-50.38%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+4.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.234</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>3</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#39044;&#28909;&#26399;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1989-05-26 08:00 ~ 05-31 20:00</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-52.37%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-54.52%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-1.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.252</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>4</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#39044;&#28909;&#26399;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1989-06-16 01:00 ~ 06-21 07:00</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+2.35%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-27.36%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+0.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.930</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>5</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#29575;&#23450;&#26399;(&#21442;&#19982;&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1990-06-14 05:00 ~ 06-17 12:00</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-21.94%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-25.29%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+0.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.096</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>6</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#29575;&#23450;&#26399;(&#21442;&#19982;&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1990-06-26 20:00 ~ 07-04 07:00</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-4.07%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+20.00%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-3.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.749</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>7</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#29575;&#23450;&#26399;(&#21442;&#19982;&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1991-05-18 21:00 ~ 05-21 08:00</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+7.19%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+1.63%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+0.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.526</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>8</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#29575;&#23450;&#26399;(&#21442;&#19982;&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1992-05-16 00:00 ~ 05-21 00:00</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-47.39%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-69.22%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+1.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.424</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>9</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#29575;&#23450;&#26399;(&#21442;&#19982;&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1992-07-01 05:00 ~ 07-09 09:00</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-18.59%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+14.53%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-5.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.521</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>10</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#29575;&#23450;&#26399;(&#21442;&#19982;&#29575;&#23450;)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1993-06-29 22:00 ~ 07-13 22:00</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+1.46%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-2.15%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-3.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.707</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>11</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#39564;&#35777;&#26399;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1994-06-08 15:00 ~ 06-20 07:00</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+1.52%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+29.30%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-4.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.578</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>12</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#39564;&#35777;&#26399;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1995-05-19 03:00 ~ 06-06 23:00</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+0.49%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+12.39%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-3.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.440</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>13</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#39564;&#35777;&#26399;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1995-07-01 03:00 ~ 07-05 21:00</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-23.41%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-2.29%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-4.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.636</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>14</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#39564;&#35777;&#26399;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1996-06-19 08:00 ~ 06-23 00:00</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-0.83%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+30.04%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-4.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-0.220</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>15</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#39564;&#35777;&#26399;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>1996-06-29 00:00 ~ 07-04 18:00</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-23.69%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+11.88%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-3.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.650</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#39564;&#35777;&#27719;&#24635;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>&#8212;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>5 &#22330;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-9.18%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>+16.26%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>-3.60</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:type="dxa" w:w="1234"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>0.417</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:t>5. &#27169;&#22411;&#34920;&#29616;&#20998;&#26512;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>5.1 &#26085;&#27169;&#22411;&#25972;&#20307;&#34920;&#29616;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#26085;&#27169;&#22411;&#37319;&#29992; 1989 &#24180;&#20316;&#20026; warm-up &#39044;&#28909;&#26399; (&#19981;&#21442;&#19982;&#25351;&#26631;&#35745;&#31639;), 1990-1993 &#24180;&#20026;&#29575;&#23450;&#26399;, 1994-1996 &#24180;&#20026;&#39564;&#35777;&#26399;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>**&#29575;&#23450;&#26399;** (1461 &#22825;): NSE = 0.883, &#24452;&#27969;&#28145;&#30456;&#23545;&#35823;&#24046; = +0.25%, &#21512;&#26684;&#29575; = 43.46%&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>**&#39564;&#35777;&#26399;** (1096 &#22825;): NSE = 0.930, &#24452;&#27969;&#28145;&#30456;&#23545;&#35823;&#24046; = +4.03%, &#21512;&#26684;&#29575; = 35.22%&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20998;&#24180; NSE (&#25490;&#38500;&#39044;&#28909;) &#21306;&#38388;&#20026; 0.796 ~ 0.952, &#24179;&#22343; 0.885, &#34920;&#26126;&#24180;&#38469;&#34920;&#29616;&#31283;&#23450;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20174;&#24180;&#24452;&#27969;&#28145;&#25955;&#28857;&#22270; (&#22270; 3) &#30475;, &#21508;&#24180;&#25955;&#28857;&#32039;&#36148; 45&#176; &#32447;, &#29575;&#23450;&#26399;&#19982;&#39564;&#35777;&#26399;&#28857;&#25454;&#26080;&#31995;&#32479;&#24615;&#20559;&#31163;, &#35828;&#26126;&#27169;&#22411;&#26410;&#20986;&#29616;&#36807;&#25311;&#21512;, &#23545;&#22810;&#24180;&#27700;&#37327;&#30340;&#27169;&#25311;&#33021;&#21147;&#33391;&#22909;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>5.2 &#27425;&#27946;&#27169;&#22411;&#25972;&#20307;&#34920;&#29616;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#27425;&#27946;&#27169;&#22411;&#37319;&#29992;&#29575;&#23450;&#26399; 1990-1993 &#30340; 6 &#22330;&#27946;&#27700;&#32852;&#21512;&#29575;&#23450; (event 5, 6, 7, 8, 9, 10; DE &#20840;&#23616;&#20248;&#21270;, &#22810;&#22330;&#24179;&#22343; NSE+&#27700;&#37327;+&#27946;&#23792;+&#23792;&#26102;&#24182;&#20860;&#39038;&#24046;&#22330;&#32422;&#26463;)&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#39044;&#28909;&#26399;&#21478;&#26377; 4 &#22330;&#27946;&#27700;&#20165;&#29992;&#20110;&#26816;&#39564;&#27169;&#22411;&#20919;&#21551;&#21160;&#29366;&#24577;, &#27491;&#24335;&#39564;&#35777;&#26399; (1994-1996) &#20849; 5 &#22330;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#22312; 5 &#22330;&#27491;&#24335;&#39564;&#35777;&#27946;&#27700;&#20013;, &#27425;&#27946;&#27169;&#22411;&#24179;&#22343; NSE = 0.417, &#24179;&#22343;&#27946;&#23792;&#30456;&#23545;&#35823;&#24046; = +16.26%, &#24179;&#22343;&#24452;&#27969;&#28145;&#30456;&#23545;&#35823;&#24046; = -9.18%, &#24179;&#22343;&#23792;&#26102;&#24046; = -3.60 h&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#25353; SL 250 &#35768;&#21487;&#35823;&#24046;&#32479;&#35745;: &#27946;&#37327;&#21512;&#26684; 3/5 &#22330; (60.0%), &#27946;&#23792;&#21512;&#26684; 3/5 &#22330; (60.0%), &#23792;&#26102;&#21512;&#26684; 2/5 &#22330; (40.0%)&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>5.3 &#22330;&#27425;&#35823;&#24046;&#21407;&#22240;&#20998;&#26512;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#25353; NSE &#21319;&#24207;, &#34920;&#29616;&#26368;&#24046; 2 &#22330;&#19982;&#26368;&#22909; 1 &#22330;&#22914;&#19979;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>**&#34920;&#29616;&#36739;&#24046;:**</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>**Event 14** (1996-06-19 ~ 1996-06-23): NSE = -0.220, &#27946;&#23792;&#35823;&#24046; = +30.04%, &#23792;&#26102;&#24046; = -4.0 h&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>**Event 12** (1995-05-19 ~ 1995-06-06): NSE = 0.440, &#27946;&#23792;&#35823;&#24046; = +12.39%, &#23792;&#26102;&#24046; = -3.0 h&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>**&#34920;&#29616;&#36739;&#22909;:**</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>**Event 15** (1996-06-29 ~ 1996-07-04): NSE = 0.650, &#27946;&#23792;&#35823;&#24046; = +11.88%, &#23792;&#26102;&#24046; = -3.0 h&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>**&#35823;&#24046;&#26469;&#28304;&#23450;&#24615;&#20998;&#26512;:**</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+      </w:pPr>
+      <w:r>
+        <w:t>**&#38477;&#38632;&#31354;&#38388;&#20195;&#34920;&#24615;**: &#38754;&#38632;&#37327;&#30001; 10 &#20010;&#38632;&#37327;&#31449;&#38754;&#31215;&#21152;&#26435;&#24471;&#21040;, &#27969;&#22495;&#20869;&#23616;&#37096;&#24378;&#23545;&#27969;&#38477;&#27700;&#38590;&#20197;&#34987;&#31232;&#30095;&#31449;&#32593;&#25429;&#25417;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+      </w:pPr>
+      <w:r>
+        <w:t>**&#21021;&#22987;&#22303;&#22756;&#21547;&#27700;&#37327;**: &#27425;&#27946;&#27169;&#25311;&#20351;&#29992;&#26085;&#27169;&#22411;&#32467;&#26463;&#26102;&#30340;&#29366;&#24577;, &#23567;&#26102;&#23610;&#24230;&#21069;&#26399;&#24433;&#21709;&#38632;&#21487;&#33021;&#19982;&#26085;&#20540;&#19981;&#20005;&#26684;&#23545;&#40784;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+      </w:pPr>
+      <w:r>
+        <w:t>**&#27719;&#27969;&#32467;&#26500;&#31616;&#21270;**: &#37319;&#29992;&#21333;&#33410;&#28857; Muskingum &#27827;&#32593;&#27719;&#27969;, &#38590;&#20197;&#21453;&#26144;&#21306;&#38388;&#25903;&#27969;&#27719;&#20837;&#19982;&#27827;&#36947;&#22374;&#21270;&#20316;&#29992;&#30340;&#38750;&#32447;&#24615;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListNumber"/>
+      </w:pPr>
+      <w:r>
+        <w:t>**&#19977;&#27700;&#28304;&#21442;&#25968;**: KI/KG/CI/CG &#25511;&#21046;&#22320;&#38754;/&#22756;&#20013;/&#22320;&#19979;&#24452;&#27969;&#20998;&#37197;, &#21333;&#32452;&#21442;&#25968;&#38590;&#20197;&#35206;&#30422;&#25152;&#26377;&#22330;&#27425;&#30340;&#21069;&#26399;&#28287;&#28070;&#29366;&#20917;&#24046;&#24322;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:t>6. &#22270;&#34920;&#35828;&#26126;&#19982;&#38468;&#22270;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 1 &#26085;&#27169;&#22411;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#35828;&#26126;&#36830;&#32493;&#27169;&#25311;&#26399;&#20869;&#38477;&#38632;&#36755;&#20837;&#19982;&#24452;&#27969;&#21709;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#29575;&#23450;&#26399;&#21644;&#39564;&#35777;&#26399;&#30340;&#26085;&#23610;&#24230;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 1&#12290;&#22270;&#20013;&#21487;&#30452;&#35266;&#30475;&#21040;&#27169;&#22411;&#23545;&#27946;&#23792;&#21644;&#26543;&#27700;&#36807;&#31243;&#30340;&#36319;&#36394;&#33021;&#21147;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="3052689"/>
+            <wp:docPr id="1" name="Picture 1"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="daily_rainfall_runoff.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId9"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="3052689"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 2 &#26085;&#27169;&#22411;&#27969;&#37327;&#21382;&#26102;&#26354;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#27604;&#36739;&#19981;&#21516;&#27969;&#37327;&#20998;&#20301;&#19978;&#30340;&#27169;&#25311;&#20559;&#24046;&#65292;&#34917;&#20805;&#32472;&#21046;&#27969;&#37327;&#21382;&#26102;&#26354;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 2&#12290;&#35813;&#22270;&#29992;&#20110;&#36741;&#21161;&#20998;&#26512;&#39640;&#27969;&#37327;&#27573;&#19982;&#20302;&#27969;&#37327;&#27573;&#30340;&#31995;&#32479;&#20559;&#24046;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="3578838"/>
+            <wp:docPr id="2" name="Picture 2"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="daily_fdc.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId10"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="3578838"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 3 &#24180;&#24452;&#27969;&#28145;&#25955;&#28857;&#22270;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#35780;&#20215;&#26085;&#27169;&#22411;&#23545;&#24180;&#24452;&#27969;&#28145;&#30340;&#27169;&#25311;&#33021;&#21147;&#65292;&#32472;&#21046;&#23454;&#27979;&#19982;&#35745;&#31639;&#24180;&#24452;&#27969;&#28145;&#25955;&#28857;&#22270;&#65292;&#24182;&#28155;&#21152; 45&#176; &#21442;&#32771;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 3&#12290;&#25955;&#28857;&#20301;&#20110; 45&#176; &#32447;&#19978;&#26041;&#34920;&#31034;&#39640;&#20272;&#65292;&#19979;&#26041;&#34920;&#31034;&#20302;&#20272;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="5264331"/>
+            <wp:docPr id="3" name="Picture 3"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="daily_annual_scatter.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId11"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="5264331"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 4 &#20998;&#24180;&#24452;&#27969;&#28145;&#23545;&#27604;&#22270;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20415;&#20110;&#36880;&#24180;&#27604;&#36739;&#27169;&#22411;&#23545;&#24180;&#24635;&#27700;&#37327;&#30340;&#25311;&#21512;&#24773;&#20917;&#65292;&#32472;&#21046;&#20998;&#24180;&#23454;&#27979;&#19982;&#35745;&#31639;&#24452;&#27969;&#28145;&#26609;&#29366;&#23545;&#27604;&#22270;&#65292;&#32467;&#26524;&#35265;&#22270; 4&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="4" name="Picture 4"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="daily_yearly_runoff_compare.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId12"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 5 &#27425;&#27946;&#20998;&#38754;&#24635;&#35272;&#22270;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20808;&#25972;&#20307;&#25226;&#25569; 15 &#22330;&#27946;&#27700;&#30340;&#27169;&#25311;&#36136;&#37327;&#65292;&#32472;&#21046;&#36880;&#22330;&#20998;&#38754;&#24635;&#35272;&#22270;&#65292;&#32467;&#26524;&#35265;&#22270; 5&#12290;&#35813;&#22270;&#29992;&#20110;&#24555;&#36895;&#23450;&#20301;&#20856;&#22411;&#22909;&#22330;&#27425;&#19982;&#24046;&#22330;&#27425;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="5950096"/>
+            <wp:docPr id="5" name="Picture 5"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_panel.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId13"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="5950096"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 6.01 &#22330;&#27425; 1 &#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20998;&#26512;&#22330;&#27425; 1 (&#39044;&#28909;&#26399;) &#30340;&#38477;&#38632;&#24452;&#27969;&#23545;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#35813;&#22330;&#27946;&#27700;&#30340;&#36880;&#26102;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 6.01&#12290;&#22270;&#20013;&#23454;&#27979;&#27969;&#37327;&#19982;&#35745;&#31639;&#27969;&#37327;&#37319;&#29992;&#19981;&#21516;&#32447;&#22411;&#21306;&#20998;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="6" name="Picture 6"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_01_preheat.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId14"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 6.02 &#22330;&#27425; 2 &#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20998;&#26512;&#22330;&#27425; 2 (&#39044;&#28909;&#26399;) &#30340;&#38477;&#38632;&#24452;&#27969;&#23545;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#35813;&#22330;&#27946;&#27700;&#30340;&#36880;&#26102;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 6.02&#12290;&#22270;&#20013;&#23454;&#27979;&#27969;&#37327;&#19982;&#35745;&#31639;&#27969;&#37327;&#37319;&#29992;&#19981;&#21516;&#32447;&#22411;&#21306;&#20998;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="7" name="Picture 7"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_02_preheat.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId15"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 6.03 &#22330;&#27425; 3 &#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20998;&#26512;&#22330;&#27425; 3 (&#39044;&#28909;&#26399;) &#30340;&#38477;&#38632;&#24452;&#27969;&#23545;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#35813;&#22330;&#27946;&#27700;&#30340;&#36880;&#26102;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 6.03&#12290;&#22270;&#20013;&#23454;&#27979;&#27969;&#37327;&#19982;&#35745;&#31639;&#27969;&#37327;&#37319;&#29992;&#19981;&#21516;&#32447;&#22411;&#21306;&#20998;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="8" name="Picture 8"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_03_preheat.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId16"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 6.04 &#22330;&#27425; 4 &#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20998;&#26512;&#22330;&#27425; 4 (&#39044;&#28909;&#26399;) &#30340;&#38477;&#38632;&#24452;&#27969;&#23545;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#35813;&#22330;&#27946;&#27700;&#30340;&#36880;&#26102;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 6.04&#12290;&#22270;&#20013;&#23454;&#27979;&#27969;&#37327;&#19982;&#35745;&#31639;&#27969;&#37327;&#37319;&#29992;&#19981;&#21516;&#32447;&#22411;&#21306;&#20998;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="9" name="Picture 9"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_04_preheat.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId17"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 6.05 &#22330;&#27425; 5 &#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20998;&#26512;&#22330;&#27425; 5 (&#29575;&#23450;&#26399;(&#21442;&#19982;&#29575;&#23450;)) &#30340;&#38477;&#38632;&#24452;&#27969;&#23545;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#35813;&#22330;&#27946;&#27700;&#30340;&#36880;&#26102;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 6.05&#12290;&#22270;&#20013;&#23454;&#27979;&#27969;&#37327;&#19982;&#35745;&#31639;&#27969;&#37327;&#37319;&#29992;&#19981;&#21516;&#32447;&#22411;&#21306;&#20998;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="10" name="Picture 10"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_05_calib.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId18"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 6.06 &#22330;&#27425; 6 &#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20998;&#26512;&#22330;&#27425; 6 (&#29575;&#23450;&#26399;(&#21442;&#19982;&#29575;&#23450;)) &#30340;&#38477;&#38632;&#24452;&#27969;&#23545;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#35813;&#22330;&#27946;&#27700;&#30340;&#36880;&#26102;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 6.06&#12290;&#22270;&#20013;&#23454;&#27979;&#27969;&#37327;&#19982;&#35745;&#31639;&#27969;&#37327;&#37319;&#29992;&#19981;&#21516;&#32447;&#22411;&#21306;&#20998;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="11" name="Picture 11"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_06_calib.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId19"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 6.07 &#22330;&#27425; 7 &#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20998;&#26512;&#22330;&#27425; 7 (&#29575;&#23450;&#26399;(&#21442;&#19982;&#29575;&#23450;)) &#30340;&#38477;&#38632;&#24452;&#27969;&#23545;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#35813;&#22330;&#27946;&#27700;&#30340;&#36880;&#26102;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 6.07&#12290;&#22270;&#20013;&#23454;&#27979;&#27969;&#37327;&#19982;&#35745;&#31639;&#27969;&#37327;&#37319;&#29992;&#19981;&#21516;&#32447;&#22411;&#21306;&#20998;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="12" name="Picture 12"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_07_calib.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId20"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 6.08 &#22330;&#27425; 8 &#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20998;&#26512;&#22330;&#27425; 8 (&#29575;&#23450;&#26399;(&#21442;&#19982;&#29575;&#23450;)) &#30340;&#38477;&#38632;&#24452;&#27969;&#23545;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#35813;&#22330;&#27946;&#27700;&#30340;&#36880;&#26102;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 6.08&#12290;&#22270;&#20013;&#23454;&#27979;&#27969;&#37327;&#19982;&#35745;&#31639;&#27969;&#37327;&#37319;&#29992;&#19981;&#21516;&#32447;&#22411;&#21306;&#20998;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="13" name="Picture 13"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_08_calib.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId21"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 6.09 &#22330;&#27425; 9 &#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20998;&#26512;&#22330;&#27425; 9 (&#29575;&#23450;&#26399;(&#21442;&#19982;&#29575;&#23450;)) &#30340;&#38477;&#38632;&#24452;&#27969;&#23545;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#35813;&#22330;&#27946;&#27700;&#30340;&#36880;&#26102;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 6.09&#12290;&#22270;&#20013;&#23454;&#27979;&#27969;&#37327;&#19982;&#35745;&#31639;&#27969;&#37327;&#37319;&#29992;&#19981;&#21516;&#32447;&#22411;&#21306;&#20998;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="14" name="Picture 14"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_09_calib.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId22"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 6.10 &#22330;&#27425; 10 &#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20998;&#26512;&#22330;&#27425; 10 (&#29575;&#23450;&#26399;(&#21442;&#19982;&#29575;&#23450;)) &#30340;&#38477;&#38632;&#24452;&#27969;&#23545;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#35813;&#22330;&#27946;&#27700;&#30340;&#36880;&#26102;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 6.10&#12290;&#22270;&#20013;&#23454;&#27979;&#27969;&#37327;&#19982;&#35745;&#31639;&#27969;&#37327;&#37319;&#29992;&#19981;&#21516;&#32447;&#22411;&#21306;&#20998;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="15" name="Picture 15"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_10_calib.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId23"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 6.11 &#22330;&#27425; 11 &#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20998;&#26512;&#22330;&#27425; 11 (&#39564;&#35777;&#26399;) &#30340;&#38477;&#38632;&#24452;&#27969;&#23545;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#35813;&#22330;&#27946;&#27700;&#30340;&#36880;&#26102;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 6.11&#12290;&#22270;&#20013;&#23454;&#27979;&#27969;&#37327;&#19982;&#35745;&#31639;&#27969;&#37327;&#37319;&#29992;&#19981;&#21516;&#32447;&#22411;&#21306;&#20998;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="16" name="Picture 16"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_11_valid.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId24"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 6.12 &#22330;&#27425; 12 &#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20998;&#26512;&#22330;&#27425; 12 (&#39564;&#35777;&#26399;) &#30340;&#38477;&#38632;&#24452;&#27969;&#23545;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#35813;&#22330;&#27946;&#27700;&#30340;&#36880;&#26102;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 6.12&#12290;&#22270;&#20013;&#23454;&#27979;&#27969;&#37327;&#19982;&#35745;&#31639;&#27969;&#37327;&#37319;&#29992;&#19981;&#21516;&#32447;&#22411;&#21306;&#20998;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="17" name="Picture 17"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_12_valid.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId25"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 6.13 &#22330;&#27425; 13 &#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20998;&#26512;&#22330;&#27425; 13 (&#39564;&#35777;&#26399;) &#30340;&#38477;&#38632;&#24452;&#27969;&#23545;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#35813;&#22330;&#27946;&#27700;&#30340;&#36880;&#26102;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 6.13&#12290;&#22270;&#20013;&#23454;&#27979;&#27969;&#37327;&#19982;&#35745;&#31639;&#27969;&#37327;&#37319;&#29992;&#19981;&#21516;&#32447;&#22411;&#21306;&#20998;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="18" name="Picture 18"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_13_valid.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId26"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 6.14 &#22330;&#27425; 14 &#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20998;&#26512;&#22330;&#27425; 14 (&#39564;&#35777;&#26399;) &#30340;&#38477;&#38632;&#24452;&#27969;&#23545;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#35813;&#22330;&#27946;&#27700;&#30340;&#36880;&#26102;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 6.14&#12290;&#22270;&#20013;&#23454;&#27979;&#27969;&#37327;&#19982;&#35745;&#31639;&#27969;&#37327;&#37319;&#29992;&#19981;&#21516;&#32447;&#22411;&#21306;&#20998;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="19" name="Picture 19"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_14_valid.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId27"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#22270; 6.15 &#22330;&#27425; 15 &#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>&#20026;&#20998;&#26512;&#22330;&#27425; 15 (&#39564;&#35777;&#26399;) &#30340;&#38477;&#38632;&#24452;&#27969;&#23545;&#24212;&#20851;&#31995;&#65292;&#32472;&#21046;&#35813;&#22330;&#27946;&#27700;&#30340;&#36880;&#26102;&#38477;&#38632;&#24452;&#27969;&#36807;&#31243;&#32447;&#65292;&#32467;&#26524;&#35265;&#22270; 6.15&#12290;&#22270;&#20013;&#23454;&#27979;&#27969;&#37327;&#19982;&#35745;&#31639;&#27969;&#37327;&#37319;&#29992;&#19981;&#21516;&#32447;&#22411;&#21306;&#20998;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+            <wp:extent cx="5669280" cy="2834640"/>
+            <wp:docPr id="20" name="Picture 20"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic>
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic>
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name="event_15_valid.png"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId28"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="5669280" cy="2834640"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect"/>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:t>7. &#25968;&#23383;&#31934;&#24230;&#19982;&#26415;&#35821;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#38477;&#38632;/&#24452;&#27969;&#28145;: mm, 1 &#20301;&#23567;&#25968;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#27969;&#37327;: m&#179;/s, 3 &#20301;&#26377;&#25928;&#25968;&#23383;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#35823;&#24046;&#25351;&#26631;: NSE/R&#178; &#20445;&#30041; 3 &#20301;, &#30334;&#20998;&#27604;&#20445;&#30041; 2 &#20301;</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="ListBullet"/>
+      </w:pPr>
+      <w:r>
+        <w:t>&#26415;&#35821;: SL 250 "&#30456;&#23545;&#35823;&#24046;"&#12289;"&#32477;&#23545;&#35823;&#24046;"&#12289;"&#21512;&#26684;&#29575;"; &#35768;&#21487;&#35823;&#24046;: &#26085;&#24452;&#27969;&#28145; 20%, &#27425;&#27946;&#27946;&#37327;/&#27946;&#23792; 20%, &#23792;&#26102; 3 h</w:t>
+      </w:r>
+    </w:p>
+    <w:sectPr w:rsidR="00FC693F" w:rsidRPr="0006063C" w:rsidSect="00034616">
+      <w:pgSz w:w="12240" w:h="15840"/>
+      <w:pgMar w:top="1440" w:right="1800" w:bottom="1440" w:left="1800" w:header="720" w:footer="720" w:gutter="0"/>
+      <w:cols w:space="720"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>

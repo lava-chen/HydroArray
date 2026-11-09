@@ -55,9 +55,24 @@ from HydroArray.plotting.styles import (
     C,
 )
 
+from HydroArray.plotting.export import (
+    FigureExportConfig,
+    configure_vector_text,
+    save_figure,
+    save_svg_png,
+)
+
 from HydroArray.plotting.crosssection import (
     cross_section_area_plot,
     cross_section_plot,
+)
+
+from HydroArray.plotting.hydrology import (
+    plot_hydrograph,
+    plot_precip_hydrograph,
+    plot_event_panel,
+    plot_flow_duration_curve,
+    plot_metric_bars,
 )
 
 from HydroArray.plotting.spatial import (
@@ -95,6 +110,24 @@ from HydroArray.utils.metrics import (
     mm_to_cms,
     cms_to_mm,
     evaluate_model,
+)
+
+from HydroArray.utils.diurnal import (
+    diurnal_factor,
+    hourly_pet_from_daily,
+)
+
+# Analysis
+from HydroArray.analysis import (
+    volume_error_pct,
+    peak_error_pct,
+    peak_time_lag,
+    nse,
+    rmse,
+    kge,
+    pbias,
+    r_squared,
+    regression_summary,
 )
 
 # Traditional hydrological models
@@ -140,13 +173,32 @@ from HydroArray.config import (
 # Calibration
 from HydroArray.domain.calibration import (
     CalibrationConfig,
-    CalibrationResult,
+    CalibrationResult as _LegacyCalibrationResult,
     ParameterBounds,
     GeneticAlgorithm,
     SCEOptimizer,
     ScipyOptimizer,
-    calibrate,
 )
+# 老 calibrate 重命名为 calibrate_legacy,避免和新 facade 撞名
+from HydroArray.domain.calibration import calibrate as calibrate_legacy
+
+# High-level auto-calibration (ref-table driven, multi-start, normalised)
+from HydroArray.calibration import (
+    auto_calibrate,
+    AutoCalibrateResult,
+    CalibrationResult,
+    Calibrator,
+    CalibratorConfig,
+    CalibrationPipeline,
+    CalibratorPreset,
+    list_presets,
+    get_preset,
+    make_calibrator_from_preset,
+    resume_from_result,
+    resume_from_calibrator_checkpoint,
+)
+# 顶层 ha.calibrate 指向新 facade(覆盖老的)
+from HydroArray.calibration._facade import calibrate
 
 # Data Assimilation
 from HydroArray.domain.assimilation import (
@@ -203,8 +255,17 @@ __all__ = [
     "get_colors",
     "list_styles",
     "C",
+    "FigureExportConfig",
+    "configure_vector_text",
+    "save_figure",
+    "save_svg_png",
     "cross_section_area_plot",
     "cross_section_plot",
+    "plot_hydrograph",
+    "plot_precip_hydrograph",
+    "plot_event_panel",
+    "plot_flow_duration_curve",
+    "plot_metric_bars",
     "satellite_plot",
     "satellite_animation",
     "get_available_times",
@@ -272,6 +333,19 @@ __all__ = [
     "mm_to_cms",
     "cms_to_mm",
     "evaluate_model",
+    # Diurnal downscaling
+    "diurnal_factor",
+    "hourly_pet_from_daily",
+    # Analysis (model-agnostic hydrology metrics)
+    "volume_error_pct",
+    "peak_error_pct",
+    "peak_time_lag",
+    "nse",
+    "rmse",
+    "kge",
+    "pbias",
+    "r_squared",
+    "regression_summary",
 
     # Calibration
     "CalibrationConfig",
@@ -280,7 +354,19 @@ __all__ = [
     "GeneticAlgorithm",
     "SCEOptimizer",
     "ScipyOptimizer",
+    "calibrate_legacy",
     "calibrate",
+    "auto_calibrate",
+    "AutoCalibrateResult",
+    "Calibrator",
+    "CalibratorConfig",
+    "CalibrationPipeline",
+    "CalibratorPreset",
+    "list_presets",
+    "get_preset",
+    "make_calibrator_from_preset",
+    "resume_from_result",
+    "resume_from_calibrator_checkpoint",
 
     # Data Assimilation
     "AssimilationResult",

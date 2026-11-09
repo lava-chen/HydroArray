@@ -79,6 +79,10 @@ class HyMODModel(WaterBalanceModel):
         if not isinstance(parameters, HyMODParameters):
             raise TypeError(f"Expected HyMODParameters, got {type(parameters)}")
 
+        # Reject invalid parameters (e.g. kq=0, huz<0) at init time
+        # instead of silently producing unphysical outputs.
+        self._validate_parameters(parameters)
+
         self._nodes = nodes
         self._params = parameters
         self._n_nodes = len(nodes)
@@ -138,27 +142,31 @@ class HyMODModel(WaterBalanceModel):
         self._xcuz = xcuz_new
 
         # Route through quick flow reservoirs (N serial linear reservoirs)
-        qf = np.zeros(n)
+        # Reference: Moore (1985) / Wagener HyMOD formulation.
+        # Each reservoir: S[t+1] = (1 - K*dt) * S[t] + dt * Inflow[t]
+        #                 Q[t+1] = K * S[t+1]
+        # This is the explicit-Euler integration of dS/dt = Inflow - K*S.
         xhuz_new = np.zeros_like(self._xhuz)
 
+        # Inflow to the first quick reservoir = direct_runoff from soil store
+        prev = direct_runoff
         for i in range(params.nq):
-            if i == 0:
-                inflow = direct_runoff + self._xhuz[:, 0] * params.kq
-            else:
-                inflow = self._xhuz[:, i]
+            s_old = self._xhuz[:, i]
+            # New storage: previous inflow enters, current storage decays
+            xhuz_new[:, i] = (1.0 - params.kq) * s_old + prev
+            # Outflow of this reservoir (feeds the next one in series)
+            prev = params.kq * xhuz_new[:, i]
 
-            outflow = params.kq * inflow
-            xhuz_new[:, i] = inflow - outflow * dt
-            xhuz_new[:, i] = np.maximum(xhuz_new[:, i], 0)
-
-        qf = params.kq * self._xhuz[:, -1]
+        # Quick flow at the basin outlet = outflow of the last serial reservoir
+        qf = prev
         self._xhuz = xhuz_new
 
-        # Route through slow flow reservoir
-        inflow_slow = slow_recharge + self._xs * params.ks
-        outflow_slow = params.ks * inflow_slow
-        self._xs = inflow_slow - outflow_slow * dt
-        self._xs = np.maximum(self._xs, 0)
+        # Route through slow flow reservoir (single linear reservoir)
+        # Same Euler form as above; prev_out = K * S[t+1]
+        s_slow = self._xs
+        s_slow_new = (1.0 - params.ks) * s_slow + slow_recharge
+        outflow_slow = params.ks * s_slow_new
+        self._xs = np.maximum(s_slow_new, 0.0)
 
         # Outputs
         surface_runoff = qf  # Quick flow from serial reservoirs
